@@ -2,11 +2,15 @@
     display: flex;
     .homeContainer{
         flex: 6;
-        .widgets {
+        .widgets , .charts{
             margin: 20px;
             display: flex;
             gap: 10px;
             
+        }
+
+        .charts {
+            margin: 5px 20px;
         }
     }
 }
