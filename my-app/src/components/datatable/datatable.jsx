@@ -14,7 +14,7 @@ const DataTable = () => {
       return (
         <div className="cellAction">
           <div className="viewButton">view</div>
-          <div className=" ">delete</div>
+          <div className="deleteButton">delete</div>
         </div>
       )
     }

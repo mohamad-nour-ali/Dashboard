@@ -1,6 +1,10 @@
 .datatable {
+    .datagrid {
+        box-shadow: 1px 4px 7px 1px rgba(201, 201, 201, 0.47);
+    }
     padding: 20px;
     height: calc(100vh - 50px);
+
 
     .cellWithImg {
         display: flex;
