@@ -40,7 +40,7 @@ const Navbar = () => {
             <ListOutlinedIcon className="icon" />
           </div>
           <div className="item">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcVnZEO6P5-ORrEzyReq8lvsZCvAwF9DvnWUtApu1Oj6wIAFwfQu97Cz3526uNSmmiQzk&usqp=CAU" alt="" className="avatar"/>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcVnZEO6P5-ORrEzyReq8lvsZCvAwF9DvnWUtApu1Oj6wIAFwfQu97Cz3526uNSmmiQzk&usqp=CAU" alt="avatar" className="avatar"/>
           </div>
         </div>
       </div>

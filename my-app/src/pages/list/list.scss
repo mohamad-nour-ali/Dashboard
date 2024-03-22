@@ -4,5 +4,13 @@
 
   .listContainer {
     flex: 6;
+    .titleNewUser {
+      box-shadow: 1px 4px 7px 1px rgba(201, 201, 201, 0.47);
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      margin: 20px;
+      margin-bottom: 0;
+    }
   }
 }
