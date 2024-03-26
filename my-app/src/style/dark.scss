@@ -1,0 +1,56 @@
+:root {
+  --border-color: #787474;
+  --hover-color: #78747449;
+  --background-color: #111;
+}
+
+.app.dark {
+  background-color: var(--background-color);
+  color: rgb(170, 161, 161);
+
+  .sidebar {
+    border-color: var(--border-color);
+
+    .top {
+      border-bottom-color: var(--border-color);
+
+      .logo {
+        color: gray;
+        font-weight: bold;
+      }
+    }
+
+    .center {
+      li {
+        &:hover {
+          background-color: var(--hover-color);
+        }
+      }
+    }
+  }
+
+  .navbar {
+    border-color: var(--border-color);
+    color: white;
+
+    .search {
+      border-color: var(--border-color);
+      color: gray;
+
+      input {
+        color: white;
+      }
+    }
+  }
+
+  .table{
+    background-color: var(--background-color);
+
+    .tableCell {
+      color: gray;
+      border-bottom-color: var(--border-color);
+    }
+  }
+
+  
+}
