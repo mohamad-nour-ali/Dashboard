@@ -4,7 +4,7 @@
   --background-color: #111;
 }
 
-.app.dark {
+.dark {
   background-color: var(--background-color);
   color: rgb(170, 161, 161);
 
@@ -43,7 +43,7 @@
     }
   }
 
-  .table{
+  .table {
     background-color: var(--background-color);
 
     .tableCell {
@@ -52,5 +52,24 @@
     }
   }
 
-  
+  .datatable {
+
+    .datagrid {
+      color: gray;
+      border: none;
+
+      .viewButton,
+      .deleteButton,
+      .cellWithStatus {
+        color: gray;
+        border: none;
+      }
+    }
+  }
+
+  input{
+    background-color: transparent;
+    color: white;
+  }
+
 }

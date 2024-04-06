@@ -1,6 +1,7 @@
+import React, { useContext } from "react";
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import PersonIcon from '@mui/icons-material/Person';
-import StoreIcon from '@mui/icons-material/Store'; import React from "react";
+import StoreIcon from '@mui/icons-material/Store';
 import CreditCardIcon from '@mui/icons-material/CreditCard';
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import InsertChartIcon from '@mui/icons-material/InsertChart';
@@ -12,8 +13,9 @@ import PersonSearchIcon from '@mui/icons-material/PersonSearch';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 import { Link } from "react-router-dom"
 import "./sidebar.scss"
-
+import { DarkModeContext } from '../../context/darkModeContext';
 const Sidebar = () => {
+  const { dispatch } = useContext(DarkModeContext);
   return (
     <div className="sidebar">
       <div className="top">
@@ -83,9 +85,8 @@ const Sidebar = () => {
         </ul>
       </div>
       <div className="bottom">
-        <div className="colorOptions"></div>
-        <div className="colorOptions"></div>
-        <div className="colorOptions"></div>
+        <div className="colorOptions" onClick={() => dispatch({ type: "LIGHT" })}></div>
+        <div className="colorOptions" onClick={() => dispatch({ type: "DARK" })}></div>
       </div>
     </div>
   )
